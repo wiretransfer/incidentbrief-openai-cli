@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "incidentbrief-openai-cli"
+version = "0.1.0"
+description = "A dependency-free Python CLI that turns incident logs into severity, impact, timeline, update, and follow-up briefs with the OpenAI Responses API."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+incidentbrief = "incidentbrief_openai_cli.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
